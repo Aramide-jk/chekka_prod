@@ -9,10 +9,16 @@ export const DB_NAME = process.env.DB_NAME ?? "chekka";
 export const REDIS_URI = process.env.REDIS_URI ?? "";
 export const CLOUDFRONT_CDN_URL = process.env.CLOUDFRONT_CDN_URL ?? "";
 
-export const S3_REGION = process.env.S3_REGION ?? "";
-export const S3_BUCKET = process.env.S3_BUCKET ?? "";
-export const S3_ACCESS_KEY = process.env.S3_ACCESS_KEY ?? "";
-export const S3_SECRET_ACCESS_KEY = process.env.S3_SECRET_ACCESS_KEY ?? "";
+// --- AWS S3 (commented out in favor of ImageKit storage) ---
+// export const S3_REGION = process.env.S3_REGION ?? "";
+// export const S3_BUCKET = process.env.S3_BUCKET ?? "";
+// export const S3_ACCESS_KEY = process.env.S3_ACCESS_KEY ?? "";
+// export const S3_SECRET_ACCESS_KEY = process.env.S3_SECRET_ACCESS_KEY ?? "";
+
+// --- ImageKit Storage ---
+export const IMAGEKIT_PUBLIC_KEY = process.env.IMAGEKIT_PUBLIC_KEY ?? "";
+export const IMAGEKIT_PRIVATE_KEY = process.env.IMAGEKIT_PRIVATE_KEY ?? "";
+export const IMAGEKIT_URL_ENDPOINT = process.env.IMAGEKIT_URL_ENDPOINT ?? "";
 
 export const JWT_ACCESS_TOKEN_SECRET =
 	process.env.JWT_ACCESS_TOKEN_SECRET ?? "";

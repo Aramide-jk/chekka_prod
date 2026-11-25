@@ -21,3 +21,9 @@ export {
 	DEMO_PASSWORD,
 	type IDemoAccount,
 } from "./demoAccounts";
+export {
+	getCarThumbnail,
+	SAMPLE_INSPECTION_PHOTOS,
+	SEED_CAR_PHOTO_URLS,
+	type ICarPhoto,
+} from "./carImages";

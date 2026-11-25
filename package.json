@@ -21,6 +21,7 @@
 		"bcrypt": "^6.0.0",
 		"cron": "^4.4.0",
 		"hash.js": "^1.1.7",
+		"imagekit": "^6.0.0",
 		"ioredis": "^5.10.1",
 		"jose": "^6.2.3",
 		"jsonwebtoken": "^9.0.3",

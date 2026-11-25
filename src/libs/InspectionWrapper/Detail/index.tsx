@@ -4,7 +4,12 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import useSWR from "swr";
 import { Button, Eyebrow, Icon, Pill, Stars } from "@/components";
-import { api, fetcher, getErrorMessage } from "@/constants";
+import {
+	api,
+	fetcher,
+	getErrorMessage,
+	SAMPLE_INSPECTION_PHOTOS,
+} from "@/constants";
 import { PageShell } from "@/layouts";
 import type { IResponseEnvelope } from "@/types";
 import {
@@ -169,11 +174,12 @@ const SAMPLE_INSPECTION: IInspection = {
 	_id: "sample",
 	status: "completed",
 	car: { make: "Toyota", model: "Camry SE", year: 2018 },
-	photoCount: 32,
+	photoCount: SAMPLE_INSPECTION_PHOTOS.length,
 	completedAt: new Date().toISOString(),
 	inspector: {
 		id: "sample-inspector",
 		fullName: "Adebayo Okonkwo",
+		avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=160&q=80",
 		city: "Lagos",
 		rating: 4.9,
 		totalCompleted: 312,

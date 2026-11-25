@@ -106,6 +106,25 @@ export const LightboxStyled = styled.div`
         object-fit: contain;
         border-radius: var(--r-sm);
     }
+    .lb-caption {
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 500;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+        background: rgba(18, 18, 16, 0.75);
+        border: 1px solid var(--hairline);
+        padding: 6px 16px;
+        border-radius: var(--r-pill);
+        display: inline-block;
+        width: fit-content;
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+    }
     .lb-count {
         position: absolute;
         bottom: 20px;
